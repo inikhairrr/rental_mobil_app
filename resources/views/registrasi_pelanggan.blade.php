@@ -1,5 +1,7 @@
 @include('header')
 
+    <h2>Registrasi Pelanggan</h2>
+
     <form method="post" action="{{ route('registrasi_pelanggan.storePelanggan') }}">
         @csrf
         <div class="mb-3">
