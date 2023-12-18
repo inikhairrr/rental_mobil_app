@@ -19,6 +19,7 @@ use App\Http\Controllers\MobilController;
 Route::get('/registrasi-pelanggan', [RegistrasiPenggunaController::class, 'addPelanggan'])->name('registrasi_pelanggan.addPelanggan');
 Route::post('/registrasi-pelanggan', [RegistrasiPenggunaController::class, 'storePelanggan'])->name('registrasi_pelanggan.storePelanggan');
 
+Route::get('/', [RegistrasiPenggunaController::class, 'formLogin'])->name('login_pelanggan.homeLogin');
 Route::get('/login-pelanggan', [RegistrasiPenggunaController::class, 'formLogin'])->name('login_pelanggan.formLogin');
 Route::post('/login-pelanggan', [RegistrasiPenggunaController::class, 'prosesLogin'])->name('login_pelanggan.prosesLogin');
 
