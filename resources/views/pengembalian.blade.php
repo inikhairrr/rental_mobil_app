@@ -4,14 +4,15 @@
 
     <form method="post" action="{{ route('mobil.prosesPengembalian') }}">
         @csrf
-
-        <label for="nomor_sim">Nomor SIM:</label>
-        <input type="text" name="nomor_sim" required>
-
-        <label for="nomor_plat">Nomor Plat Mobil:</label>
-        <input type="text" name="nomor_plat" required>
-
-        <button type="submit">Kembalikan Mobil</button>
+        <div class="mb-3">
+        <label class="form-label" for="nomor_sim">Nomor SIM:</label>
+        <input class="form-control" type="text" name="nomor_sim" required>
+        </div>
+        <div class="mb-3">
+        <label class="form-label" for="nomor_plat">Nomor Plat Mobil:</label>
+        <input class="form-control" type="text" name="nomor_plat" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Kembalikan Mobil</button>
     </form>
 
 @include('footer')
