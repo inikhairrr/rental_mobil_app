@@ -23,7 +23,7 @@ class RegistrasiPenggunaController extends Controller
 
         DataPelanggan::create($data);       
 
-        return redirect('/dashboard');
+        return redirect()->route('login_pelanggan.formLogin')->with('success', 'Registrasi berhasil.');
     }
 
     public function formLogin()
